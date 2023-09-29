@@ -3,7 +3,6 @@ Python interface for BCN3D Moveo manipulator controlling via Arduino Mega
 
 ## Firstly, to controll the robot with python API, we have to upload our firmwire to Arduino Mega.
 
-# <a name="47"></a> Программирование
 ## <a name="48"></a> Работа с Arduino IDE и установка прошивки
 1. [Скачайте](https://www.arduino.cc/en/software) установщик среды разработки Arduino IDE и установите.
 2. Подключите контроллер Arduino Mega к компьютеру с запущенной средой Arduino IDE и включите его питание.
