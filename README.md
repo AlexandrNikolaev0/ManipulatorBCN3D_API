@@ -10,7 +10,7 @@ Python interface for BCN3D Moveo manipulator controlling via Arduino Mega
 4. Откройте диспетчер устройств на компьютере и убедитесь, что контроллер распознаётся компьтером (как показано на одном из примеров): <div align="center"><img width="200" src="imgProgramming/ArduinoMega.png"><img width="200" src="imgProgramming/CH340.png"></div>
 5. Откройте Arduino IDE на компьютере и выберете порт устройства (как показано на примере):<div align="center"><img width="500" src="imgProgramming/COM4A.png"></div>
 6. Установим библиотеки `AccelStepper` и `MultiStepper`: <div align="center"><img width="500" src="imgProgramming/lib.png"></div> <div align="center"><img width="500" src="imgProgramming/accel.png"></div>
-7. Загрузим прошивку `manipulator2.ino` из папки `programms` в контроллер: <div align="center"><img width="500" src="imgProgramming/download.png"></div>
+7. Загрузим прошивку `manipulator2.ino` из папки `manipulator2` в контроллер: <div align="center"><img width="500" src="imgProgramming/download.png"></div>
 
 ## <a name="49"></a> Пример реализации собственных алгоритмов
 
