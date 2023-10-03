@@ -18,7 +18,7 @@ Firstly, to controll the robot with python API, we have to upload our firmwire t
 Для того, чтобы работать с манипулятором, необходимо его откалибровать, а именно задать все параметры в файле `Manipulator.h`, в соответствие с комментариями. В файла `Titrator.cpp` и `Titrator.h` находится всё, что необходимо для работы с дозатором. Их следует рассмотреть и настроить некоторые параметры в соответствие с изложенными там комментариями. Файл `manipulator2.ino` определяет общий алгоритм движения манипулятора и является примером написанного алгоритма. По комментариям, находящимся в файле, возможно настроить свой алгоритм действий манипулятора, а так же настроить конфигурацию самого манипулятора. Программа может требовать доработки в зависимости от конкретной задачи. По сути, в алгоритме используются функции, которые определены в файле `Manipulator.h`
 
 ## Downloading Python API
-The second step is to download [Python](https://www.python.org/downloads/release/python-3120/) API:
+The second step is to download [Python]([https://www.python.org/downloads/release/python-3120/](https://www.python.org/downloads/)) API:
 ```
 git clone https://github.com/AlexandrNikolaev0/ManipulatorBCN3D_API.git
 pip install requirements.txt
