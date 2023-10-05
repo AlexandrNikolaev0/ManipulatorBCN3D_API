@@ -21,6 +21,11 @@ Firstly, to controll the robot with python API, we have to upload our firmwire t
 The second step is to download [Python](https://www.python.org/downloads/) API:
 ```
 git clone https://github.com/AlexandrNikolaev0/ManipulatorBCN3D_API.git
-pip install requirements.txt
+cd ManipulatorBCN3D_API
+python -m venv manAPI_env
+cd manAPI_env/Scripts
+activate.bat
+cd ../..
+pip install -r requirements.txt
 ```
 
