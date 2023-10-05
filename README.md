@@ -67,5 +67,6 @@ markers = [
 
 Run the test ```python odometryTest.py```
 
-
+## Run the main algorithm
+An example of algorithm is provided in ```main.py``` file. You can take the template from there to write your own algorithm, based on ```ManipulatorAPI.py```
 
