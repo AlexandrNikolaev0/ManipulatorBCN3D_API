@@ -55,8 +55,17 @@ You have to open and personalize the next parameters, according to your stuff:
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 ```
+6) Define the markers list. Example:
+```
+markers = [
+{"id":0,"size":aruco_marker_side_length},
+{"id":8,"size":aruco_marker_side_length},
+{"id":10,"size":0.035}
+]
+```
+7) For the function ```odom.updateCameraPoses(frame,time.time()*1000-startTime, 8)``` as the last argument, you have to put the id of marker, that you want to detect.
 
-
+Run the test ```python odometryTest.py```
 
 
 
