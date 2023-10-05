@@ -32,3 +32,9 @@ cd ../..
 pip install -r requirements.txt
 ```
 
+## Testing the camera odometry
+For that step you have to calibrate your camera, which you want to put on the instrument, making a YAML calibration file.
+1) Prepare a real chessboard with ceverall cells for each side.
+2) Make 15-30 photos of the chessboard in different positions on your camera and save them in ManipulatorBCN3D_API/myCameraChessPhotos.
+3) Open the cameraCalibrete.py file and change ```number_of_squares_X, number_of_squares_Y, square_size, images, cv_file``` according to the comments and your individuall equipment.
+4) 
