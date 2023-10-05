@@ -42,13 +42,17 @@ For that step you have to calibrate your camera, which you want to put on the in
 The main file for testing the camera is ```odometryTest.py```.
 You have to open and personalize the next parameters, according to your stuff:
 
-```aruco_marker_side_length``` - the standart marker size, that we use\n
-```aruco_dictionary_name``` - the simplest aruco dict, that we use. The full list of dictionaries you can find in the class arucoOdometry beginning (file ```arucoOdometry.py```)\n
-```camera_calibration_parameters_filename``` - here you have to put the filename, that we got as a result of the calibration (it corresponds to ```cv_file``` in ```cameraCalibrate.py``` file)\n
-```cap = cv2.VideoCapture(id)``` - you have to put the number of your camera instead of the ```id```. Usually, it is 0, 1, 2... Depending on the count of connected to the PC cameras.\n
+```aruco_marker_side_length``` - the standart marker size, that we use
+
+```aruco_dictionary_name``` - the simplest aruco dict, that we use. The full list of dictionaries you can find in the class arucoOdometry beginning (file ```arucoOdometry.py```)
+
+```camera_calibration_parameters_filename``` - here you have to put the filename, that we got as a result of the calibration (it corresponds to ```cv_file``` in ```cameraCalibrate.py``` file)
+
+```cap = cv2.VideoCapture(id)``` - you have to put the number of your camera instead of the ```id```. Usually, it is 0, 1, 2... Depending on the count of connected to the PC cameras.
+
 Here you have to set the camera resolution (the same as have the calibration photos):
 ```
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)\n
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 ```
 
