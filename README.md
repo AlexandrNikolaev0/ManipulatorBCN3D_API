@@ -35,6 +35,19 @@ pip install -r requirements.txt
 ## Testing the camera odometry
 For that step you have to calibrate your camera, which you want to put on the instrument, making a YAML calibration file.
 1) Prepare a real chessboard with ceverall cells for each side.
-2) Make 15-30 photos of the chessboard in different positions on your camera and save them in ManipulatorBCN3D_API/myCameraChessPhotos.
-3) Open the cameraCalibrete.py file and change ```number_of_squares_X, number_of_squares_Y, square_size, images, cv_file``` according to the comments and your individuall equipment.
-4) 
+2) Make 15-30 photos of the chessboard in different positions on your camera and save them in ```ManipulatorBCN3D_API/myCameraChessPhotos```.
+3) Open the ```cameraCalibrate.py``` file and change ```number_of_squares_X, number_of_squares_Y, square_size, images, cv_file``` according to the comments and your individuall equipment.
+4) Run ```python cameraCalibrate.py```, using the manAPI_env.
+
+The main file for testing the camera is ```odometryTest.py```.
+You have to open and personalize the next parameters, according to your stuff:
+```aruco_marker_side_length``` - the standart marker size, that we use
+```aruco_dictionary_name``` - the simplest aruco dict, that we use. The full list of dictionaries you can find in the class arucoOdometry beginning (file ```arucoOdometry.py```)
+```camera_calibration_parameters_filename``` - here you have to put the filename, that we got as a result of the calibration (it corresponds to ```cv_file``` in ```cameraCalibrate.py``` file)
+```cap = cv2.VideoCapture(id)``` - you have to put the number of your camera instead of the ```id```. Usually, it is 0, 1, 2... Depending on the count of connected to the PC cameras.
+```cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)``` - here you have to set the camera resolution (the same as have the calibration photos)
+
+
+
+
